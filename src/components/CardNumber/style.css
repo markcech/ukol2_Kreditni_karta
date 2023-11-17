@@ -1,0 +1,20 @@
+.container {
+  text-align: center;
+  margin: 20px;
+}
+
+.credit-card-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container p {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.cardInputRef_0,
+.cardInputRef_1,
+.cardInputRef_2 {
+  margin-right: 7px;
+}
