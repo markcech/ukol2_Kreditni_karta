@@ -3,12 +3,17 @@ import "./style.css";
 
 const CardNumber = () => {
   const cardInputRefs = [useRef(), useRef(), useRef(), useRef()];
+  const buttonRef = useRef();
 
   const handleInputChange = (e, index) => {
     const value = e.target.value;
 
     if (value.length === 4 && index < 3) {
       cardInputRefs[index + 1].current.focus();
+    }
+
+    if(value.length === 4 && index === 3) {
+      buttonRef.current.focus();
     }
   };
 
@@ -26,6 +31,7 @@ const CardNumber = () => {
           />
         ))}
       </div>
+      <button ref={buttonRef}>Odeslat</button>
     </div>
   );
 };
