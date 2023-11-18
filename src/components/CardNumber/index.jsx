@@ -21,6 +21,7 @@ const CardNumber = () => {
     <div className="container">
       <p>Vložte číslo vaší kreditní karty:</p>
       <div className="credit-card-input">
+        
         {cardInputRefs.map((cardInputRef, index) => (
           <input
             className={`cardInputRef_${index}`}
@@ -30,8 +31,10 @@ const CardNumber = () => {
             onChange={(e) => handleInputChange(e, index)}
           />
         ))}
-      </div>
-      <button ref={buttonRef}>Odeslat</button>
+        
+        <button ref={buttonRef}>Odeslat</button>
+
+      </div> 
     </div>
   );
 };

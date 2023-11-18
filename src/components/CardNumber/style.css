@@ -13,8 +13,6 @@
   margin-bottom: 10px;
   font-size: 20px;
 }
-.cardInputRef_0,
-.cardInputRef_1,
-.cardInputRef_2 {
+input {
   margin-right: 7px;
 }
